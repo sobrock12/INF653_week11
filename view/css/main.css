@@ -53,7 +53,12 @@ textarea, select, button {
     text-align: center;
 }
 
+#table-wrapper {
+    overflow-x: auto;
+}
+
 table {
+    min-width: 762px;
     width: 100%;
     border: 1px solid;
     border-collapse: collapse;

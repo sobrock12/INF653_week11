@@ -49,7 +49,8 @@
                 <br>
 
                 <?php if(sizeof($vehicles) != 0) { ?>
-                <div id="table_overflow">
+
+                <div id="table-wrapper">
                     <table>
                         <thead>
                             <tr>

@@ -49,7 +49,8 @@
                 <br>
 
                 <?php if(sizeof($vehicles) != 0) { ?>
-                <div style="overflow-x:auto;">
+
+                    <div id="table-wrapper">
                     <table>
                         <thead>
                             <tr>
@@ -74,7 +75,7 @@
                             <?php endforeach; ?>
                         </tbody>
                     </table>
-                </div>
+                    </div>
                 <?php } else { ?>
                     <h2>No vehicles found using selected criteria! Please try another search.</h2>
                 <?php } ?>
