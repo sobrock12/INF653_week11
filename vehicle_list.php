@@ -49,7 +49,7 @@
                 <br>
 
                 <?php if(sizeof($vehicles) != 0) { ?>
-                <div id="table">
+                <div style="overflow-x:auto;">
                     <table>
                         <thead>
                             <tr>

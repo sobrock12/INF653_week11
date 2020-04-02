@@ -9,6 +9,10 @@ h1 {
     font-style: italic;
 }
 
+#register_link {
+    text-align: right;
+}
+
 #centered {
     margin-top: 5px;
     text-align: center;
@@ -20,12 +24,16 @@ h1 {
 
 html {
     background-color: #3ba5b8;
+    width: 100%;
+    height: 100%;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     min-width: 0px;
     max-width: 760px;
-    width: auto;
+    width: 100%;
     margin: 32px auto;
     background-color: #05cece;
 }
@@ -37,11 +45,18 @@ textarea, select, button {
     box-sizing: border-box;
 }
 
+#user_welcome {
+    text-align: center;
+}
+
+#centered_form {
+    text-align: center;
+}
+
 table {
     width: 100%;
     border: 1px solid;
     border-collapse: collapse;
-    overflow: scroll;
 }
 
 th {
@@ -77,4 +92,31 @@ footer {
 
 #radio_div {
     padding: 1px;
+}
+
+/********************************************************************
+* Media Queries
+********************************************************************/
+@media screen and (min-width: 768px) {
+
+    body {
+        max-width: 1024px; 
+        margin: auto; 
+        border: 1px solid black; 
+      /*  box-shadow: 5px 10px 8px #888888; */
+    }
+    #table_overflow {
+        overflow-x: auto;
+    }
+    nav form section {
+        display: inline-block;
+    }
+    nav form section select {
+        font-size: 1.2rem;
+    }
+    nav form section div {
+        margin: auto;
+        text-align: center;
+    }
+
 }
