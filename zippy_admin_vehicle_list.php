@@ -1,4 +1,6 @@
 <?php include 'view/zippy_admin_header.php'; ?>
+<?php require_once('util/valid_admin.php'); ?>
+
 <div id="main_div">
     <main>
         <section>
@@ -92,9 +94,12 @@
 
                 <br>
 
-                <a href="zippy_admin_index.php?action=show_add_vehicle_form">Click here</a> to add a vehicle.</p><br>
-                <a href="zippy_admin_index.php?action=edit_types">View/Edit Vehicle Types</a></p><br>
-                <a href="zippy_admin_index.php?action=edit_classes">View/Edit Vehicle Classes</a></p>
+                <a href="zippy_admin_index.php?action=list_vehicles">Admin Home / Vehicle List</a><br>
+                <a href="zippy_admin_index.php?action=show_add_vehicle_form">Click here</a> to add a vehicle.<br>
+                <a href="zippy_admin_index.php?action=edit_types">View/Edit Vehicle Types</a><br>
+                <a href="zippy_admin_index.php?action=edit_classes">View/Edit Vehicle Classes</a><br>
+                <a href="zippy_admin_register.php">Register a New Admin</a><br>
+                <a href="zippy_admin_index.php?action=logout">Logout</a><br>
         </section>
     </main>
 </div>

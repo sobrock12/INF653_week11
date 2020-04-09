@@ -14,7 +14,6 @@
     }
     
 
-    //localhost testing
     /*
     $dsn = 'mysql:host=localhost;dbname=zippyusedautos';
     $username = 'root';
@@ -27,4 +26,5 @@
         exit();
     }
     */
+    
 ?>

@@ -3,6 +3,8 @@
     require('model/vehicle_db.php');
     require('model/type_db.php');
     require('model/class_db.php');
+    session_start();
+
 
 
     $action = filter_input(INPUT_POST, 'action');
@@ -100,6 +102,23 @@
         header("Location: zippy_admin_index.php");
 
         }
+    } else if ($action == 'logout') {
+
+        unset($_SESSION['is_valid_login']);
+
+        $_SESSION = array();
+        session_destroy();
+        
+        $name = session_name();
+        $expire = strtotime('-1 year');
+        $params = session_get_cookie_params();
+        $path = $params['path'];
+        $domain = $params['domain'];
+        $secure = $params['secure'];
+        $httponly = $params['httponly'];
+        setcookie($name, '', $expire, $path, $domain, $secure, $httponly);
+        header("Location: zippy_admin_login.php");
     }
+
     
 ?>
